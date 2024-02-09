@@ -1,3 +1,11 @@
+# Clone Project
+
+1. Clone Project
+2. npm install
+3. copy .env.example and rename to .env. Paste your Unpsplash Access Key
+4. npm run dev
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

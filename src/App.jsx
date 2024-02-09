@@ -27,7 +27,7 @@ const App = () => {
       setImages(data.results);
       setTotalPages(data.total_pages);
     } catch (error) {
-      console.log(error);
+      console.log('error', error);
     }
   };
 
@@ -47,11 +47,6 @@ const App = () => {
     searchInput.current.value = selection;
     resetSearch();
   };
-
-  console.log('page', page);
-
-
-
 
   console.log('page', page);
 
@@ -128,7 +123,7 @@ const App = () => {
               className="bg-amber-600 text-white px-4 py-2 mt-5 m-2 rounded-md cursor-pointer">
               Previous
             </button>
-          )}{page < totalPages &&  (
+          )}{page < totalPages && (
             <button
               onClick={() => setPage(page + 1)}
               className="bg-amber-600 text-white px-4 py-2 mt-5 m-2 rounded-md cursor-pointer">
